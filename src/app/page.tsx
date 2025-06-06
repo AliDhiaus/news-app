@@ -17,7 +17,7 @@ export default function Home() {
   useEffect(() => {
     getData()
       .then((data) => {
-        setArticles(data.articles);
+        setArticles(data);
       })
       .catch((err) => {
         console.error(err);
